@@ -2,10 +2,10 @@
 
 <?php if (!empty($products)): ?>
     <ul>
-        <?php foreach($products as $product): ?>
-            <li>
-                <?= $product['productName'] ?>
-            </li>
+        <?php foreach($products as $productName): ?>
+            <li><a href="classicmodels?code=">
+                <?= $productName['productName'] ?>
+            </li></a>
         <?php endforeach; ?>
     </ul>
 <?php endif; ?>
